@@ -1,0 +1,34 @@
+<aiml version="2.0">
+
+<category><pattern>HELLO</pattern><template>Hi there</template></category>
+
+
+        
+<category><pattern>SUP</pattern><template>Hi there</template></category>
+
+
+        
+<category><pattern>SUP</pattern><template>Su</template></category>
+
+
+        
+<category><pattern>SUP</pattern><template>Sup?</template></category>
+
+
+        
+<category><pattern>WHAT S YOUR NAME</pattern><template>My name is Samantha.</template></category>
+
+
+        
+<category><pattern>WHAT S YOUR NAME</pattern><template>* name</template></category>
+
+
+        
+<category><pattern>WHAT S YOUR NAME</pattern><template>My name is samantha</template></category>
+
+
+        
+<category><pattern>NAME</pattern><template>Samantha.</template></category>
+
+
+</aiml>
