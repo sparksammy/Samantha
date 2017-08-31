@@ -13,3 +13,5 @@ Then run it.
 
 OR Get the Windows Build!
 https://sparksammy.tk/SamanthaWin32.zip
+
+python3
