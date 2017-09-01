@@ -5,7 +5,7 @@ Sparksammy's girlfriend!
 Requires:
 
 1. PyAudio
-2. aiml
+2. python-aiml
 
 Install via "pip"
 
