@@ -6,6 +6,7 @@ Requires:
 
 1. PyAudio
 2. python-aiml
+3. gcc
 
 Install via "pip"
 
