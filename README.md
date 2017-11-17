@@ -5,7 +5,7 @@ Sparksammy's girlfriend!
 Requires:
 
 1. PyAudio (sudo apt-get install python3-pyaudio)
-2. python-aiml (sudo apt-get install python3-aiml)
+2. python-aiml (sudo pip install python3-aiml)
 
 Install via "pip"
 
