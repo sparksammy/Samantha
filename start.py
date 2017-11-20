@@ -72,36 +72,38 @@ if __name__ == '__main__':
     tts = TextToSpeech()
     while True:
         question = input("S> ")
-        if "paint" in question: 
+        if "open paint" in question: 
             output = "Opening paint..."
             os.system('mspaint')
             print(output)
             response = tts.get_pronunciation(output)
-        elif "notepad" in question: 
+        elif "open notepad" in question: 
             output = "Opening notepad..."
             os.system('notepad')
             print(output)
             response = tts.get_pronunciation(output)
-        elif "command prompt" in question: 
+        elif "open command prompt" in question: 
             output = "Opening command prompt..."
             os.system('cmd')
             print(output)
             response = tts.get_pronunciation(output)
-        elif "firefox" in question: 
+        elif "open firefox" in question: 
             output = "Opening Fire fox..."
             os.system('firefox.exe')
             print(output)
             response = tts.get_pronunciation(output)
-        elif "who" and "you" in question: 
-            output = "I am Spark Sammy's Girl friend, and my name is Samantha. However, we can be greats friends!"
+        elif "who are you" in question: 
+            output = "I am a girlfriend of Sparksammy's Spark Sammy, and my name is Samantha. However, we can be greats friends!"
             print(output)
             response = tts.get_pronunciation(output)
-        elif "can" and "i" and "girlfriend" in question: 
+        elif "be your girlfriend" in question: 
             output = "Sorry, but I am already taken"
             print(output)
             response = tts.get_pronunciation(output)
         else:
             output = kernel.respond(question)
+            print(output)
+            response = tts.get_pronunciation(output)
         continue
 		
         print(output)
