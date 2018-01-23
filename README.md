@@ -2,15 +2,9 @@
 
 Sparksammy's girlfriend!
 
-Requires:
+Install dependencies via "pip":
 
-1. PyAudio
-2. python-aiml
-3. cx_Freeze
-
-Install via "pip":
-
-sudo pip install python-aiml cx_Freeze pyaudio
+sudo pip install python-aiml cx_Freeze pyaudio wikipedia
 
 Then run it.
 
