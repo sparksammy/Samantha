@@ -4,10 +4,13 @@ Sparksammy's girlfriend!
 
 Requires:
 
-1. PyAudio (sudo apt-get install python3-pyaudio)
-2. python-aiml (sudo pip install python-aiml)
+1. PyAudio
+2. python-aiml
+3. cx_Freeze
 
-Install via "pip"
+Install via "pip":
+
+sudo pip install python-aiml cx_Freeze pyaudio
 
 Then run it.
 
