@@ -8,6 +8,7 @@ import time
 import sys, glob
 import aiml
 import os
+import wikipedia #Add the info services here, separated by comma space.
 
 kernel = aiml.Kernel()
 for file in glob.glob('ai/*.aiml'):
@@ -74,30 +75,45 @@ if __name__ == '__main__':
         question = input("S> ")
         if "open paint" in question: 
             output = "Opening paint..."
-            os.system('mspaint')
             print(output)
             response = tts.get_pronunciation(output)
+            os.system('mspaint')
         elif "open notepad" in question: 
             output = "Opening notepad..."
-            os.system('notepad')
             print(output)
             response = tts.get_pronunciation(output)
+            os.system('notepad')
         elif "open command prompt" in question: 
             output = "Opening command prompt..."
-            os.system('cmd')
             print(output)
             response = tts.get_pronunciation(output)
+            os.system('cmd')
         elif "open firefox" in question: 
             output = "Opening Fire fox..."
-            os.system('firefox.exe')
             print(output)
             response = tts.get_pronunciation(output)
+            os.system('firefox.exe')
+        elif "open chrome" in question: 
+            output = "Opening chrome..."
+            print(output)
+            response = tts.get_pronunciation(output)
+            os.system('C:\Program Files (x86)\Google\Application\chrome.exe')
+        elif "open photoshop" in question: 
+            output = "Opening Photo Shop..."
+            print(output)
+            response = tts.get_pronunciation(output)
+            os.system('"C:\Program Files\Adobe\Adobe Photoshop CC 2018\Photoshop.exe"')
         elif "who are you" in question: 
-            output = "I am a girlfriend of Sparksammy's Spark Sammy, and my name is Samantha. However, we can be greats friends!"
+            output = "I am a girlfriend of Spark Sammy, and my name is Samantha. However, we can be great friends!"
             print(output)
             response = tts.get_pronunciation(output)
         elif "be your girlfriend" in question: 
             output = "Sorry, but I am already taken"
+            print(output)
+            response = tts.get_pronunciation(output)
+        elif "wikipedia" in question: 
+            wikipedia_q = input("*#W* ")
+            output = wikipedia.summary(wikipedia_q);
             print(output)
             response = tts.get_pronunciation(output)
         else:
