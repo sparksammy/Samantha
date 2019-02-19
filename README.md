@@ -2,9 +2,9 @@
 
 Sparksammy's girlfriend!
 
-Install dependencies via "pip":
+Install dependencies via "pip3":
 
-sudo pip install python-aiml cx_Freeze pyaudio wikipedia
+sudo pip3 install python-aiml cx_Freeze pyaudio wikipedia
 
 Then run it.
 
