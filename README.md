@@ -2,6 +2,16 @@
 
 Sparksammy's girlfriend!
 
+sudo apt-get install libasound2-dev
+
+http://portaudio.com/download.html
+
+tar -zxvf [portaudioziphere.tgz]
+
+./configure && make
+
+sudo make install
+
 Install dependencies via "pip3":
 
 sudo pip3 install python-aiml cx_Freeze pyaudio wikipedia
