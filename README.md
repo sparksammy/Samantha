@@ -3,8 +3,9 @@
 Sparksammy's girlfriend!
 
 ## Windows install instructions
+Run as admin:
 
-sudo pip3 install python-aiml cx_Freeze pyaudio wikipedia
+pip3 install python-aiml cx_Freeze pyaudio wikipedia
 
 ## Linux install instructions
 
