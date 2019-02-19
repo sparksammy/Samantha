@@ -2,6 +2,12 @@
 
 Sparksammy's girlfriend!
 
+## Windows install instructions
+
+sudo pip3 install python-aiml cx_Freeze pyaudio wikipedia
+
+## Linux install instructions
+
 sudo apt-get install libasound2-dev
 
 http://portaudio.com/download.html
