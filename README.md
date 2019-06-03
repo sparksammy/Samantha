@@ -21,7 +21,7 @@ sudo make install
 
 Install dependencies via "pip3":
 
-sudo pip3 install python-aiml cx_Freeze pyaudio wikipedia
+sudo pip3 install python-aiml pyaudio wikipedia
 
 Then run it.
 
