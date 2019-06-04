@@ -11,6 +11,7 @@ import os
 import wikipedia
 import speech_recognition as sr
 from roku import Roku
+from lifxlan import LifxLAN
 
 kernel = aiml.Kernel()
 for file in glob.glob('ai/*.aiml'):
@@ -160,11 +161,14 @@ if __name__ == '__main__':
                  print("Wikipedia - could not connect to audio recognition servers.")
                  tts.get_pronunciation("Sorry, I couldn't connect to the audio recogntion service.")
         elif "connect" in question and "Roku" in question: 
-            Roku.discover(timeout=10)
-            print("Roku connect - Ready.")
-            tts.get_pronunciation("Please use the keyboard to type the IP")
-            rokuIP = input("ROKU IP:")
-            roku = Roku(rokuIP)
+            try:
+                Roku.discover(timeout=10)
+                print("Roku connect - Ready.")
+                tts.get_pronunciation("Please use the keyboard to type the IP")
+                rokuIP = input("ROKU IP:")
+                roku = Roku(rokuIP)
+            except:
+                print("ERROR. Are you sure that device exists?")
         elif "Roku" in question and "home" in question:
             try:
                 print("Doing roku function.")
@@ -209,6 +213,27 @@ if __name__ == '__main__':
             except:
                 print("ERROR. I don't think you are connected...")
                 tts.get_pronunciation("Whoops! Are you sure you are connected?")
+        elif "lifx" in question and "connect" in question:
+            try:
+                lanLights = LifxLAN()
+                print("LIFX CONNECT READY.")
+                tts.get_pronunciation("Please say the name of the device.")
+                recogntionAudio = r.listen(source)
+                lifxLight = lanLights.get_device_by_name(recogntionAudio)
+            except:
+                print("ERROR. Are you sure that device exists?")
+        elif "lifx" in question and "on" in question:
+            try:
+                print("LIFX on.")
+                lifxLight.set_power(true)
+            except:
+                print("ERROR. Are you sure you are connected?")
+        elif "lifx" in question and "off" in question:
+            try:
+                print("LIFX off.")
+                lifxLight.set_power(off)
+            except:
+                print("ERROR. Are you sure you are connected?")
         else:
             output = kernel.respond(question)
             print(output)
