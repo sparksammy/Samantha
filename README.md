@@ -5,7 +5,7 @@ Sparksammy's girlfriend!
 ## Windows install instructions
 Run as admin:
 
-pip3 install python-aiml cx_Freeze pyaudio wikipedia SpeechRecognition pyttsx3 roku
+pip install python-aiml cx_Freeze pyaudio wikipedia SpeechRecognition pyttsx3 roku lifxlan
 
 ## Linux install instructions
 
@@ -21,7 +21,7 @@ sudo make install
 
 Install dependencies via "pip3":
 
-sudo pip3 install python-aiml pyaudio wikipedia SpeechRecognition pyttsx3 roku
+sudo pip3 install python-aiml pyaudio wikipedia SpeechRecognition pyttsx3 roku lifxlan
 
 Then run it.
 
