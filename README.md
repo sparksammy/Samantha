@@ -11,6 +11,8 @@ pip install python-aiml cx_Freeze pyaudio wikipedia SpeechRecognition pyttsx3 ro
 
 sudo apt-get install libasound2-dev
 
+### CHOICE
+---
 http://portaudio.com/download.html
 
 tar -zxvf [portaudioziphere.tgz]
@@ -19,6 +21,10 @@ tar -zxvf [portaudioziphere.tgz]
 
 sudo make install
 
+***OR***
+
+sudo apt-get install portaudio19-dev libffi-dev libssl-dev libmpg123-dev
+---
 Install dependencies via "pip3":
 
 sudo pip3 install python-aiml pyaudio wikipedia SpeechRecognition pyttsx3 roku lifxlan
