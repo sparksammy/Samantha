@@ -1,6 +1,6 @@
 # Samantha
 
-Sparksammy's girlfriend!  *as a meme*
+Sparksammy's *meme.*
 
 ## Windows install instructions
 Run as admin:
